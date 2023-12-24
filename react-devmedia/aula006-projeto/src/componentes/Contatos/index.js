@@ -5,11 +5,12 @@ function Contatos() {
   return (
     <section id="contato">
       <div>
-        <h3>Fale Conosco</h3>
+        <h3>Fale conosco</h3>
         <p>
-          Não perca tempo, venha conhecer uma das nossas lojas ou entre em
+          Não perca tempo, venha conhecer uma de nossas lojas ou entre em
           contato através de nossas redes sociais ou da central de atendimento.
         </p>
+
         <div>
           <div>
             <h4>Contato</h4>
@@ -38,7 +39,6 @@ function Contatos() {
               <span>contato@oticavida.com</span>
             </div>
           </div>
-
           <div>
             <h4>Nossas Redes Sociais</h4>
             <div>

@@ -3,9 +3,9 @@ import "./style.css";
 
 function Produtos() {
   return (
-    <section>
+    <section id="produtos">
       <div>
-        <h2>NOSSOS PRODUTOS</h2>
+        <h3>Nossos produtos</h3>
         <p>
           Trabalhamos com óculos de grau, óculos de sol, lentes transition nos
           modelos masculino, feminino e infantil.
@@ -14,29 +14,41 @@ function Produtos() {
           Todos os nossos preços são acessíveis e contam com a melhor qualidade
           do mercado.
         </p>
-
         <div>
           <div>
-            <h3>Óculos de grau</h3>
-            <img src="" />
+            <h4>Óculos de grau</h4>
+            <img
+              src="assets/oculos01.png"
+              title="Óculos de grau"
+              alt="4 óculos de grau de cores diferentes"
+            />
             <p>R$ 500,00</p>
           </div>
-
           <div>
-            <h3>Óculos de grau</h3>
-            <img src="" />
-            <p>R$ 500,00</p>
+            <h4>Óculos transition</h4>
+            <img
+              src="assets/oculos02.png"
+              title="Óculos de grau"
+              alt="4 óculos de grau de cores diferentes"
+            />
+            <p>R$ 750,00</p>
           </div>
-
           <div>
-            <h3>Óculos de grau</h3>
-            <img src="" />
-            <p>R$ 500,00</p>
+            <h4>Óculos de sol</h4>
+            <img
+              src="assets/oculos03.png"
+              title="Óculos de grau"
+              alt="4 óculos de grau de cores diferentes"
+            />
+            <p>R$ 700,00</p>
           </div>
-
           <div>
-            <h3>Óculos de grau</h3>
-            <img src="" />
+            <h4>Óculos infantil</h4>
+            <img
+              src="assets/oculos04.png"
+              title="Óculos de grau"
+              alt="4 óculos de grau de cores diferentes"
+            />
             <p>R$ 500,00</p>
           </div>
         </div>
