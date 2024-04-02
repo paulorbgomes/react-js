@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Core</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      let nome = document.createElement("h1");
+      nome.setAttribute("id", "nome");
+      let fnome = document.createTextNode("Paulo R. B. Gomes");
+      nome.appendChild(fnome);
+
+      let d1 = document.getElementById("root");
+      d1.appendChild(nome);
+    </script>
+  </body>
+</html>
