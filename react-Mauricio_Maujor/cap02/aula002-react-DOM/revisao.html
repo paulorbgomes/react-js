@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Core x React DOM</title>
     <script src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="container1"></div>
     <div id="container2"></div>
 
     <script>
-        const titulo = document.createElement("h1");
-        titulo.setAttribute("class", "logo");
-        const texto = document.createTextNode("Manipulação com DOM Core ...");
-        titulo.appendChild(texto);
-        const root = document.getElementById("container1");
-        root.appendChild(titulo);
+      const titulo = document.createElement("h1");
+      titulo.setAttribute("class", "logo");
+      const texto = document.createTextNode("Manipulação com DOM Core ...");
+      titulo.appendChild(texto);
+      const root = document.getElementById("container1");
+      root.appendChild(titulo);
 
-        const nome = React.createElement("h1", {className: "logo"}, "Manipulação com React.DOM ...");
-        ReactDOM.render(nome, document.getElementById("container2"));
+      const nome = React.createElement("h1", {className: "logo"}, "Manipulação com React.DOM ...");
+      ReactDOM.render(nome, document.getElementById("container2"));
     </script>
-
-</body>
+  </body>
 </html>
