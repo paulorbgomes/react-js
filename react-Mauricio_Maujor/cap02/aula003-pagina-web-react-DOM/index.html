@@ -33,6 +33,23 @@
             React.createElement("p", {}, "Rodapé"));
         };
         ReactDOM.render(Footer(), document.getElementById("root"));
+
+        function Topo() {
+            return React.createElement("div", {className: "c-topo"},
+            Header(),
+            Navegacao()
+            );
+        };
+        ReactDOM.render(Topo(), document.getElementById("root"));
+
+        function App() {
+            return React.createElement(React.Fragment, {},
+            Topo(),
+            Principal(),
+            Footer()
+            );
+        };
+        ReactDOM.render(App(), document.getElementById("root"));
     </script>
 
 </body>
