@@ -12,6 +12,7 @@
     <div id="container2"></div>
 
     <script>
+      // DOM Core
       const titulo = document.createElement("h1");
       titulo.setAttribute("class", "logo");
       const texto = document.createTextNode("Manipulação com DOM Core ...");
@@ -19,6 +20,7 @@
       const root = document.getElementById("container1");
       root.appendChild(titulo);
 
+      // React.DOM
       const nome = React.createElement("h1", {className: "logo"}, "Manipulação com React.DOM ...");
       ReactDOM.render(nome, document.getElementById("container2"));
     </script>
