@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
     <title>Capítulo 2</title>
 </head>
 <body>
@@ -10,8 +12,11 @@
     <h1>Capítulo 2</h1>
     <h2>DOM Core x React.DOM</h2>
 
+    <div id="root"></div>
+
     <script>
-        
+        const editora = React.createElement("h1", {className: "logo"}, "Editora Maujor Tech");
+        ReactDOM.render(editora, document.getElementById("root"));
     </script>
     
 </body>
