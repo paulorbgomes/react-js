@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 2</title>
+</head>
+<body>
+
+    <h1>Capítulo 2</h1>
+    <h2>DOM Core x React.DOM</h2>
+
+    <div id="root"></div>
+
+    <script>
+
+        var h1 = document.createElement("h1");
+        h1.setAttribute("class", "logo");
+        var text = document.createTextNode("Editora Maujor Tech");
+        h1.appendChild(text);
+
+        var root = document.getElementById("root");
+        root.appendChild(h1);
+
+        // Exercicio
+        let menu = document.createElement("nav");
+        menu.setAttribute("class", "menu");
+
+        let list = document.createElement("ul");
+
+        let item1 = document.createElement("li");
+        let a1 = document.createElement("a");
+        a1.setAttribute("href", "index.html");
+        let texta1 = document.createTextNode("Home");
+        a1.appendChild(texta1);
+        item1.appendChild(a1);
+        list.appendChild(item1);
+
+        let item2 = document.createElement("li");
+        let a2 = document.createElement("a");
+        a2.setAttribute("href", "livros.html");
+        let texta2 = document.createTextNode("Livros");
+        a2.appendChild(texta2);
+        item2.appendChild(a2);
+        list.appendChild(item2);
+
+        let item3 = document.createElement("li");
+        let a3 = document.createElement("a");
+        a3.setAttribute("href", "autores.html");
+        let texta3 = document.createTextNode("Autores");
+        a3.appendChild(texta3);
+        item3.appendChild(a3);
+        list.appendChild(item3);
+
+        menu.appendChild(list);
+        document.body.appendChild(menu);
+        
+    </script>
+
+</body>
+</html>
