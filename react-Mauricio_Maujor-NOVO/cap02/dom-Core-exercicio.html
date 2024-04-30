@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 2</title>
+</head>
+<body>
+
+    <script>
+
+        let topo = document.createElement("h1");
+        let textoTopo = document.createTextNode("Editora MaujorTec");
+        topo.appendChild(textoTopo);
+
+        let divNavegacao = document.createElement("div");
+        let textoNavegacao = document.createTextNode("Coluna de navegação ...");
+        divNavegacao.appendChild(textoNavegacao);
+
+        let divPrincipal = document.createElement("div");
+        let textoPrincipal = document.createTextNode("Coluna principal ...");
+        divPrincipal.appendChild(textoPrincipal);
+
+        let rodape = document.createElement("footer");
+        let textoRodape = document.createTextNode("Rodapé ...");
+        rodape.appendChild(textoRodape);
+
+        document.body.appendChild(topo);
+        document.body.appendChild(divNavegacao);
+        document.body.appendChild(divPrincipal);
+        document.body.appendChild(rodape);
+
+    </script>
+    
+</body>
+</html>
